@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner-container{
+    width: 100%;
+    height: 450px;
+    background-image: url("./images/cover1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 10px 10px 40px gray;
+    
+}
+
+.color-overlay{
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(
+    rgba(0,0,0,.9) 7%,
+    rgba(0,0,0,0) 92%);
+    position: absolute;
+}
+
+.banner-header{
+    width: 495px;
+    height: 150px;
+    position: absolute;
+    top: 85px;
+    left: 75px; 
+    
+}
+
+.banner-header > h1{
+    font-weight: bold;
+    font-size: 55px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.banner-header p{
+    font-size: 15px;
+    font-weight: 400;
+    color: blanchedalmond;
+    font-family: font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+}
+
+.donate-button{
+    background: #EF233C;
+    border-radius: 5px;
+    padding: 10px 16px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
