@@ -1,18 +1,58 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: #ef233c;
+    --clr-bg-white: #ffffff;
+    --clr-text-white: #ffffff;
+    --clr-bg-pink: #ffbff6a9;
+}
+
+body{   
+    font-family: "Raleway";
+    background-color: #fbf1f9;
+}
+
+main {
+    padding: 0 15%;
+    margin: 0 auto;
+}
+
+a.button {
+    text-decoration: none;
+    font-size: .8em;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--clr-primary);
+    background-color: var(--clr-bg-white);
+    border: 3px solid var(--clr-primary);
+    transition: 0.3s;
+}
+
+a.button:hover {
+    color: var(--clr-text-white);
+    background-color: var(--clr-primary);
+    border: 3px solid var(--clr-primary);
 }
 
 .banner-container{
     width: 100%;
-    height: 450px;
+    height: 500px;
     background-image: url("./images/cover1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     box-shadow: 10px 10px 40px gray;
-    
+    margin-bottom: 80px;
 }
 
 .color-overlay{
@@ -25,12 +65,11 @@
 }
 
 .banner-header{
-    width: 495px;
+    width: 800px;
     height: 150px;
-    position: absolute;
-    top: 85px;
-    left: 75px; 
-    
+    padding-top: 140px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .banner-header > h1{
@@ -38,15 +77,17 @@
     font-size: 55px;
     padding-bottom: 20px;
     color: white;
-    font-family: 'Inter', sans-serif;
-    
+    font-family: 'Inter', sans-serif;  
 }
 
 .banner-header p{
-    font-size: 15px;
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
     font-weight: 400;
-    color: blanchedalmond;
-    font-family: font-family: 'Poppins', sans-serif;
+    color: rgb(246, 244, 244);
+    font-family: 'Poppins', sans-serif;
     padding-bottom: 20px;
 }
 
@@ -57,4 +98,86 @@
     color: white;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+}
+
+.description-area{  
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.description-text-area{
+    width: 40%;
+}
+
+.description-text-area h2{
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 17px;
+}
+
+.description-text-area p{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.description-video-area{
+    width: 40%;
+    padding-top: 15px;
+}
+
+.description-photo-area{
+    width: 40%;
+}
+
+.description-photo-area img{
+    width: 100%;
+    padding-top: 81px;
+}
+
+.box-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.two-boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-describe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.each-box{
+    display: flex;
+    align-items: flex-start;
+    width: 48%;
+    background-color: #D0F5FF;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.each-box h3 {
+    font-size: 1.2em;
+}
+
+.each-box p {
+    font-size: .9em;
+    line-height: 1.3em;
+    padding: 20px 0;
+}
+
+.each-box img{
+    width: 5vw;
+    margin: 0 40px 0 20px;
 }
